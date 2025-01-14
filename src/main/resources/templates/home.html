@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.com">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+
+<title>GOLD'S GYM</title>
+
+<style>
+.plan-box {
+	border: 2px solid black;
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: #f1c40f;
+	box-shadow: 0px 0px 2px 1px black;
+}
+
+.plan-box h2 {
+	color: #333;
+}
+
+.plan-box ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.plan-box ul li {
+	padding: 5px 0;
+	color: #999;
+}
+
+.plan-box:hover {
+	background-color: aquamarine;
+	cursor: pointer;
+}
+
+.background-img-sizing {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+</style>
+
+</head>
+<body>
+
+	<div style="background-image: url('/images/b.jpg');"
+		class="background-img-sizing">
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand text-white" href="#">GOLD'S GYM</a>
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link active text-white"
+							aria-current="page" href="/">Home</a></li>
+						<li class="nav-item"><a class="nav-link text-white"
+							href="available_members">My Members</a></li>
+						<li class="nav-item"><a class="nav-link text-white"
+							href="my_members">Daily Entry</a></li>
+					</ul>
+					<div>
+						<a class="nav-link text-white" href="member_register">New
+							Members Register</a>
+					</div>
+					<div>
+						<img alt="" src="/images/gym-logo.png" width="100px">
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container text-center my5">
+			<br> <img alt="" src="/images/Gyms_fst.jpg" height="auto"
+				width="100%" object-fit="contain" position="relative">
+			<h1>
+				<br>GOLD's GYM
+			</h1>
+			<h5>
+				<br>Gold's Gym is a globally renowned fitness brand that has
+				made its mark in India. With a strong legacy dating back to 1965 in
+				Venice Beach, California, Gold's Gym has become synonymous with
+				fitness excellence and innovation. Gold’s Gym India carries the
+				legacy ahead in the home country since its inception in 2002.
+				World-class fitness facilities and a comprehensive range of workout
+				programs tailored to meet the needs of diverse fitness enthusiasts
+				is what sets us apart from others. Gold's Gym India, a part of this
+				esteemed legacy, has expanded its presence across various cities,
+				aiming to empower individuals to achieve their fitness goals,
+				regardless of their fitness levels or aspirations. It's a fitness
+				haven that combines state-of-the-art equipment, expert trainers, and
+				a supportive community to foster a holistic approach to wellness.
+			</h5>
+			<br>
+
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="plan-box">
+						<h2>Basic Plan</h2>
+
+						<ul>
+							<li>Price: ₹1000 per month</li>
+							<li>Access to basic gym equipment such as treadmills,
+								stationary bikes, and weight machines.</li>
+							<li>No access to classes or personal training sessions.
+								Limited hours of operation, typically during off-peak times.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="plan-box">
+						<h2>Standard Plan</h2>
+						<ul>
+							<li>Price: ₹1500 per month</li>
+							<li>Access to a wider range of equipment including cardio
+								machines, free weights, and strength training machines.</li>
+							<li>Limited access to group fitness classes like yoga,
+								spinning, and aerobics.</li>
+							<li>Access to basic amenities such as showers and locker
+								rooms.</li>
+							<li>Extended hours of operation including evenings and
+								weekends.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="plan-box">
+						<h2>Premium Plan</h2>
+						<ul>
+							<li>Price: ₹2000 per month</li>
+							<li>Full access to all gym facilities including equipment,
+								classes, and amenities.</li>
+							<li>Unlimited access to group fitness classes led by
+								certified instructors.</li>
+							<li>Option for personal training sessions with experienced
+								trainers.</li>
+							<li>Access to additional amenities such as sauna, steam
+								room, and towel service.</li>
+							<li>Priority access during peak hours and busy periods.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+			integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+			integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+			crossorigin="anonymous"></script>
+	</div>
+
+</body>
+</html>
